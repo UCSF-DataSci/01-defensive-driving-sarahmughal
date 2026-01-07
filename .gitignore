@@ -13,6 +13,3 @@ venv/
 
 # Pytest
 .pytest_cache/
-
-# Local artifacts
-processed_email.txt

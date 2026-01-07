@@ -42,11 +42,7 @@ def analyze_patient_data(patients):
         bmi = calculate_bmi(weight, height)
         risk = get_risk_level(bmi)
 
-        results.append({
-            "name": name,
-            "bmi": round(bmi, 1),
-            "risk": risk
-        })
+        results.append({"name": name, "bmi": round(bmi, 1), "risk": risk})
 
         print(f"{name:15} | BMI: {bmi:5.1f} | Risk: {risk}")
 
@@ -61,9 +57,9 @@ def main():
 
     # Test data: (name, weight_kg, height_cm)
     test_patients = [
-        ("Patient A", 68, 170),   # Should be ~23.5 BMI (normal)
-        ("Patient B", 95, 180),   # Should be ~29.3 BMI (overweight)
-        ("Patient C", 52, 160),   # Should be ~20.3 BMI (normal)
+        ("Patient A", 68, 170),  # Should be ~23.5 BMI (normal)
+        ("Patient B", 95, 180),  # Should be ~29.3 BMI (overweight)
+        ("Patient C", 52, 160),  # Should be ~20.3 BMI (normal)
         ("Patient D", 102, 175),  # Should be ~33.3 BMI (obese)
     ]
 
